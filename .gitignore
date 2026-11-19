@@ -1,0 +1,13 @@
+# data (raw + processed are reproducible; see run_all.py)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.env
+kaggle.json

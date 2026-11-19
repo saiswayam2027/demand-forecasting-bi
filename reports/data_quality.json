@@ -1,0 +1,110 @@
+{
+  "schema": {
+    "train": {
+      "schema_missing_columns": 0,
+      "schema_unexpected_columns": 0,
+      "schema_uncoercible_values": 0
+    },
+    "store": {
+      "schema_missing_columns": 0,
+      "schema_unexpected_columns": 0,
+      "schema_uncoercible_values": 0
+    }
+  },
+  "state_holiday_raw_values": [
+    "0",
+    "a",
+    "b",
+    "c"
+  ],
+  "pre": {
+    "rows": 1017209,
+    "duplicates": 0,
+    "negative_sales": 0,
+    "missing_store_days": 33121,
+    "stores_with_gaps": 181,
+    "calendar_days_missing_for_all_stores": 0,
+    "expected_rows": 1050330,
+    "closed_days": 172817,
+    "closed_but_sales_positive": 0,
+    "open_but_zero_sales": 54,
+    "outliers": 1113,
+    "invalid_state_holiday_codes": 0,
+    "dayofweek_date_mismatch": 0,
+    "promo_not_binary": 0,
+    "open_not_binary": 0,
+    "school_holiday_not_binary": 0
+  },
+  "post": {
+    "rows": 1050330,
+    "duplicates": 0,
+    "negative_sales": 0,
+    "missing_store_days": 0,
+    "stores_with_gaps": 0,
+    "calendar_days_missing_for_all_stores": 0,
+    "expected_rows": 1050330,
+    "closed_days": 205992,
+    "closed_but_sales_positive": 0,
+    "open_but_zero_sales": 0,
+    "outliers": 1113,
+    "invalid_state_holiday_codes": 0,
+    "dayofweek_date_mismatch": 0,
+    "promo_not_binary": 0,
+    "open_not_binary": 0,
+    "school_holiday_not_binary": 0
+  },
+  "pre_store": {
+    "stores": 1115,
+    "duplicate_stores": 0,
+    "missing_competition_distance": 3,
+    "missing_competition_open_since": 354,
+    "promo2_since_missing_when_promo2_active": 0,
+    "promo2_since_blank_when_promo2_off": 544
+  },
+  "fix_log": {
+    "dropped_rows_unparseable_key": 0,
+    "duplicates_removed": 0,
+    "negative_sales_set_to_zero": 0,
+    "invalid_state_holiday_recoded": 0,
+    "closed_but_sales_positive_set_open": 0,
+    "open_but_zero_sales_set_closed": 54,
+    "missing_store_days_filled": 33121,
+    "dayofweek_recomputed": 0,
+    "outliers_flagged_kept": 1113
+  },
+  "store_fix_log": {
+    "competition_distance_median_imputed": 3,
+    "competition_open_since_unknown_flagged": 354,
+    "promo2_fields_structurally_blank_filled": 544
+  },
+  "outlier_profile": {
+    "n": 1113,
+    "share_on_promo": 0.6136567834681043,
+    "share_on_promo_all_open_days": 0.4463556064040704,
+    "share_high_side": 0.3297394429469901,
+    "share_month_nov_dec": 0.6630727762803235,
+    "share_month_nov_dec_all_open_days": 0.12056072331222804
+  },
+  "gap_profile": {
+    "all_contiguous": true,
+    "blocks": [
+      {
+        "start": "2013-01-01",
+        "end": "2013-01-01",
+        "days": 1,
+        "stores": 1
+      },
+      {
+        "start": "2014-07-01",
+        "end": "2014-12-31",
+        "days": 184,
+        "stores": 180
+      }
+    ]
+  },
+  "date_range": [
+    "2013-01-01",
+    "2015-07-31"
+  ],
+  "n_stores": 1115
+}
