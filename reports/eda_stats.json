@@ -1,0 +1,44 @@
+{
+  "promo_test": {
+    "n_stores": 1115,
+    "mean_sales_promo": 8191.510338962679,
+    "mean_sales_nopromo": 5915.42627376096,
+    "mean_lift_pct": 39.66544084502421,
+    "lift_ci95": [
+      38.91987334951228,
+      40.449621790851225
+    ],
+    "t_stat": 86.987471346596,
+    "p_ttest": 0.0,
+    "p_wilcoxon": 5.880079034080735e-184,
+    "cohens_dz": 2.6050692512549367,
+    "share_stores_positive": 1.0
+  },
+  "promo_by_store_type": {
+    "kruskal_H": 53.71470132046625,
+    "p": 1.290797452035944e-11,
+    "epsilon_sq": 0.04821786474009537,
+    "mean_lift_by_type": {
+      "a": 38.33160107337708,
+      "b": 20.349789071676135,
+      "c": 40.634135468977256,
+      "d": 42.50443744943062
+    }
+  },
+  "state_holiday_test": {
+    "p_mannwhitney": 0.48188764484635527,
+    "median_ratio_holiday": 1.0169667325269676,
+    "median_ratio_ordinary": 0.9658971149755418
+  },
+  "trend": {
+    "yoy_like_for_like": {
+      "2014": 0.026135696428585264,
+      "2015": 0.03053182631563378
+    }
+  },
+  "seasonality": {
+    "acf_lag7": 0.5522370754605621,
+    "december_2013_vs_year_avg": 0.2623235337851726,
+    "sunday_open_share": 0.024047921825848338
+  }
+}
