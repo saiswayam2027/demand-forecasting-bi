@@ -1,0 +1,5 @@
+model,model_type,description,is_best_model,has_interval,scope
+naive,Baseline,Last observed open-day sales repeated for the horizon,0,0,all_stores
+seasonal_naive,Baseline,Same weekday in the most recent observed week,0,0,all_stores
+sarima,Statistical,"Per-store SARIMAX(1,0,1)(1,1,1)7 with open/promo/holiday regressors (store sample only)",0,0,sarima_sample
+lightgbm,Machine learning,Global LightGBM on lag/rolling/calendar/promo features; quantile models give the 80% interval,1,1,all_stores

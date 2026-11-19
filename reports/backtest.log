@@ -1,0 +1,12 @@
+fold 1/6 origin=2014-11-21 done in 66s
+fold 2/6 origin=2015-01-02 done in 70s
+fold 3/6 origin=2015-02-13 done in 68s
+fold 4/6 origin=2015-03-27 done in 77s
+fold 5/6 origin=2015-05-08 done in 76s
+fold 6/6 origin=2015-06-19 done in 80s
+            model   WAPE   MAPE     RMSE  Bias  n_rows  WAPE_fold_mean  WAPE_fold_std
+0        lightgbm   9.50   9.81  1041.93  0.10  226099            9.53           2.24
+1           naive  23.23  24.70  2310.72 -5.23  226099           23.25           4.86
+2          sarima  13.17  13.53  1480.93 -0.83   12081           13.29           4.45
+3  seasonal_naive  23.63  23.59  2425.92 -6.68  226099           23.65           5.53
+best: lightgbm {'WAPE': 59.80337076858952, 'MAPE': 58.42768174472911, 'RMSE': 57.0498776736044}
